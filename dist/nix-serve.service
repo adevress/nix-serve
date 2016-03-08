@@ -1,0 +1,8 @@
+[Unit]
+Description=nix binary cache creation tool
+
+[Service]
+User=nix-serve
+Environment=NIX_DAEMON=remote
+ExecStart=/usr/bin/nix-serve -p 8080
+
